@@ -13,7 +13,7 @@ $ npm install @speroautem/shortcode
 ## Example
 
 ```js
-var shortcode = require('@speroautem/shortcode')
+const shortcode = require('@speroautem/shortcode')
 
 shortcode.encode(0) //...... '0'
 shortcode.encode(10)//.......'a'
@@ -21,6 +21,10 @@ shortcode.encode(1024)//.....'gw'
 shortcode.decode('0')//.......0
 shortcode.decode('a')//.......10
 shortcode.decode('gw')//......1024
+```
+
+```ts
+import * as shortcode from '@speroautem/shortcode'
 ```
 
 ## API
