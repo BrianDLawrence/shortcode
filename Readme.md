@@ -3,7 +3,6 @@
 
 A utility package to encode and decode generic encoding algorithms. By default base62 is used however other encodings such as base58 or custom will be supported in future releases. This can be used to create short URLs that are URL-safe. 
 
-
 ## Installation
 
 ```
@@ -13,18 +12,22 @@ $ npm install @speroautem/shortcode
 ## Example
 
 ```js
-const shortcode = require('@speroautem/shortcode')
-
+import * as shortcode from '@speroautem/shortcode';
 shortcode.encode(0) //...... '0'
 shortcode.encode(10)//.......'a'
 shortcode.encode(1024)//.....'gw'
 shortcode.decode('0')//.......0
 shortcode.decode('a')//.......10
 shortcode.decode('gw')//......1024
-```
 
-```ts
-import * as shortcode from '@speroautem/shortcode'
+import { encode, decode } from '@speroautem/shortcode';
+encode(0) //...... '0'
+encode(10)//.......'a'
+encode(1024)//.....'gw'
+decode('0')//.......0
+decode('a')//.......10
+decode('gw')//......1024
+
 ```
 
 ## API
