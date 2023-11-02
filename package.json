@@ -1,6 +1,6 @@
 {
   "name": "@speroautem/shortcode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility package to encode and decode generic encoding algorithms. By default base62 will be used however other encodings such as base58 or custom will be supported in future releases. ",
   "main": "index.js",
   "scripts": {
